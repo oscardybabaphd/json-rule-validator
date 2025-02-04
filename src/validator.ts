@@ -27,7 +27,7 @@ export class JsonRuleGenerator {
                 };
             }
         } catch (error) {
-            throw new Error('Invalid slide json schema')
+            throw new Error('Invalid json schema')
         }
     }
 
