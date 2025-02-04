@@ -45,12 +45,13 @@ interface Condition {
 - `<= or >=`: less than or equal to or greater than or equal to is use for comparism of integer value or date
 - `===`: Identical comparism of string values
 - `arrayContainsAny`: Compare two arrays and return true is array1 containt any element in array2
+- `between`: Compare a single item with an array in range
 
 # Rule Schema
 
 The `ruleSchema` object defines a complex condition using a nested structure. It represents a set of conditions that can be used for filtering data. Each condition consists of a combination of logical operators and rules.
 
-## Example Condition
+## Sample Condition
 
 ```javascript
 const ruleSchema = {
