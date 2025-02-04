@@ -138,7 +138,7 @@ static GenerateRules(ruleSchema: Condition): any //generate json-logic rule from
 static GenerateIfStatment(ruleSchema: Condition): string // generate human understandable if statement from json schema
 ````
 ```typescript
-static ExecuteSlideRule(ruleSchema: Condition, data: object): boolean // Execute json schema directly
+static ExecuteRule(ruleSchema: Condition, data: object): boolean // Execute json schema directly
 ````
 ```typescript
 static ExecuteJsonRule(jsonRule: any, data: object): boolean // Execute json rule using json-logic light weight library, this option is faster because we dont need to parse the json anymore
