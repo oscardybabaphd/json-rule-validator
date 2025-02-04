@@ -1,0 +1,37 @@
+{
+  "name": "json-rule-validator",
+  "version": "1.0.4",
+  "description": "This is light weight library that give you ability to embed logic within a json schema and uses json-logic to parse your schema",
+  "main": "validator.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "build": "tsc && npm run copy-package-json",
+    "copy-package-json": "copyfiles package.json dist"
+  },
+  "keywords": [
+    "json-rule"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oscardybabaphd/json-rule-validator.git"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "author": "Oscar Itaba",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.5",
+    "@types/json-logic-js": "^2.0.2",
+    "jest": "^29.6.4",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "copyfiles": "^2.4.1",
+    "json-logic-js": "^2.0.2"
+  }
+}
