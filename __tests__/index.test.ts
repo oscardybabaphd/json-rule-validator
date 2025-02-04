@@ -215,7 +215,7 @@ test('test with data truthy', () => {
         "last_order_date": "2023-04-07",
         "amount": "501"
     }
-    const result = JsonRuleGenerator.ExecuteSlideRule(ruleSchema, data)
+    const result = JsonRuleGenerator.ExecuteRule(ruleSchema, data)
     expect(result).toBe(true);
 });
 test('test with data false', () => {
@@ -263,7 +263,7 @@ test('test with data false', () => {
         "last_order_date": "2023-04-07",
         "amount": "501"
     }
-    const result = JsonRuleGenerator.ExecuteSlideRule(ruleSchema, data)
+    const result = JsonRuleGenerator.ExecuteRule(ruleSchema, data)
     expect(result).toBe(false);
 });
 
@@ -352,7 +352,7 @@ test('the fucntion should generte json logic structure, test all segement truthy
         "last_order_date": "2023-04-07",
         "amount": "500"
     }
-    const result = JsonRuleGenerator.ExecuteSlideRule(ruleSchema, data)
+    const result = JsonRuleGenerator.ExecuteRule(ruleSchema, data)
     expect(result).toBe(true);
 });
 
@@ -496,7 +496,7 @@ test('test identical operator', () => {
         "last_order_date": "2023-04-07",
         "amount": "501"
     }
-    const result = JsonRuleGenerator.ExecuteSlideRule(ruleSchema, data)
+    const result = JsonRuleGenerator.ExecuteRule(ruleSchema, data)
     expect(result).toBe(true);
 });
 

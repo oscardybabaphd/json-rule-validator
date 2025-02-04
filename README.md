@@ -132,13 +132,13 @@ const ruleSchema = {
 
 ## Utility Methods
 ```typescript
-static GenerateRules(ruleSchema: Condition): any //generate json-logic rule from slide json schema
+static GenerateRules(ruleSchema: Condition): any //generate json-logic rule from json schema
 ````
 ```typescript
-static GenerateIfStatment(ruleSchema: Condition): string // generate human understandable if statement from slide json schema
+static GenerateIfStatment(ruleSchema: Condition): string // generate human understandable if statement from json schema
 ````
 ```typescript
-static ExecuteSlideRule(ruleSchema: Condition, data: object): boolean // Execute slide json schema directly
+static ExecuteSlideRule(ruleSchema: Condition, data: object): boolean // Execute json schema directly
 ````
 ```typescript
 static ExecuteJsonRule(jsonRule: any, data: object): boolean // Execute json rule using json-logic light weight library, this option is faster because we dont need to parse the json anymore
@@ -148,7 +148,7 @@ static ExecuteJsonRule(jsonRule: any, data: object): boolean // Execute json rul
 static GetSchemaVariables(jsonRule: any): string[] // Get all variables present in the rule schema
 ````
 
-## Sample Output (Slide Rule  to Json-logic)
+## Sample Output (Rule to Json-logic)
 
 ````json
 {
@@ -255,7 +255,7 @@ static GetSchemaVariables(jsonRule: any): string[] // Get all variables present 
     ]
 }
 ````
-## Sample Output (Slide Rule  to If Statement)
+## Sample Output (Rule  to If Statement)
 ````typescript
 if(((customer_type === "New" && segmentation === "LOCATION" && country === "Nigeria" && ['ikeja','shomolu','yaba'].includes(city))) && (['test','beans'].includes(product_ordered)) && (last_order_date >= "2023-04-04" && last_order_date <= "2023-04-04") && (amount >= "400" && amount <= "500"))
 {

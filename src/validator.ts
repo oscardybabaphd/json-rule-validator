@@ -94,7 +94,7 @@ export class JsonRuleGenerator {
         }
     }
 
-    public static ExecuteSlideRule(ruleSchema: Condition, data: object): boolean {
+    public static ExecuteRule(ruleSchema: Condition, data: object): boolean {
         try {
             const rule = this.GenerateRules(ruleSchema);
             this.AddOperations();
